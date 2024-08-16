@@ -155,8 +155,8 @@ app.post('/upload', async (req, res) => {
     console.log('c2patool execution completed');
 
     // Clean up the temporary manifest file
-    // await fsPromises.unlink(tempManifestPath);
-    // console.log('Temporary manifest file cleaned up');
+    await fsPromises.unlink(tempManifestPath);
+    console.log('Temporary manifest file cleaned up');
 
     // get the manifest store report from stdout
     let report = JSON.parse(result.stdout)
