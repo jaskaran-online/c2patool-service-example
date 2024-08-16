@@ -1,17 +1,24 @@
 {
     "ta_url": "http://timestamp.digicert.com",
     "claim_generator": "CAI_Demo/0.1",
-    
     "assertions": [
-      {
-          "label": "c2pa.actions",
-          "data": {
-              "actions": [
-                  {
-                      "action": "c2pa.published"
-                  }
-              ]
-          }
-      }
-  ]
+        {
+            "label": "c2pa.actions",
+            "data": {
+                "actions": [
+                    {
+                        "action": "c2pa.published"
+                    }
+                ]
+            }
+        },
+        {
+            "label": "personal.info",
+            "data": {
+                "countryCode": "+91",
+                "phone": "9530654704",
+                "name": "Jaskraan Singh"
+            }
+        }
+    ]
 }

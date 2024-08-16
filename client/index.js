@@ -131,6 +131,7 @@ function handleFileUpload(file) {
                 body: JSON.stringify({
                     file: Array.from(new Uint8Array(event.target.result)),
                     name,
+                    fileName,
                     countryName,
                     countryCode,
                     mobileNumber

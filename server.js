@@ -66,7 +66,7 @@ console.log('Setting up routes...');
 app.get('/version', async function (req, res) {
   console.log('Received request for c2patool version');
   try {
-    let result = await exec('./c2patool --version');
+    let result = await exec('c2patool --version');
     console.log('c2patool version:', result.stdout);
     res.send(result.stdout);
   } catch (err) {
@@ -87,26 +87,55 @@ app.post('/upload', async (req, res) => {
     const { name, countryName, countryCode, mobileNumber } = req.body;
 
     // Create a custom manifest JSON
+    // const customManifest = JSON.stringify({
+    //   "ta_url": "http://timestamp.digicert.com",
+    //   "claim_generator": "CAI_Demo/0.1",
+    //   "assertions": [
+    //     {
+    //       "label": "c2pa.actions",
+    //       "data": {
+    //         "actions": [
+    //           {
+    //             "name": name,
+    //             "countryName": countryName,
+    //             "countryCode": countryCode,
+    //             "phone": mobileNumber,
+    //             "action": "c2pa.published"
+    //           }
+    //         ]
+    //       }
+    //     }
+    //   ]
+    // });
+
     const customManifest = JSON.stringify({
       "ta_url": "http://timestamp.digicert.com",
       "claim_generator": "CAI_Demo/0.1",
       "assertions": [
-        {
-          "label": "c2pa.actions",
-          "data": {
-            "actions": [
-              {
-                "name": name,
-                "countryName": countryName,
-                "countryCode": countryCode,
-                "phone": mobileNumber,
-                "action": "c2pa.published"
+          {
+              "label": "c2pa.actions",
+              "data": {
+                  "actions": [
+                      {
+                          "action": "c2pa.published"
+                      }
+                  ]
               }
-            ]
+          },
+          {
+              "label": "personal.info",
+              "data": {
+                  "name": name,
+                  "countryName": countryName,
+                  "countryCode": countryCode,
+                  "phone": mobileNumber,
+                  "action": "c2pa.published"
+              }
           }
-        }
       ]
-    });
+  });
+
+
 
     console.log('Created custom manifest:', customManifest);
 
@@ -126,8 +155,8 @@ app.post('/upload', async (req, res) => {
     console.log('c2patool execution completed');
 
     // Clean up the temporary manifest file
-    await fsPromises.unlink(tempManifestPath);
-    console.log('Temporary manifest file cleaned up');
+    // await fsPromises.unlink(tempManifestPath);
+    // console.log('Temporary manifest file cleaned up');
 
     // get the manifest store report from stdout
     let report = JSON.parse(result.stdout)
