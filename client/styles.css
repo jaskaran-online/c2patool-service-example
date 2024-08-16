@@ -1,0 +1,60 @@
+
+ .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  line-height:0;
+  column-count:5;
+}
+
+.container {
+  position: relative;
+  height: 200px;
+  margin: 6px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  padding: 10px;
+  /* background-color: rgb(220, 220, 220); */
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  /* border: 1px solid black; */
+  display: none;
+}
+
+.popup .title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.popup .producer,
+.popup .signer,
+.popup .time
+{
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+
+ 
+

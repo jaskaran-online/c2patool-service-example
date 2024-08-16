@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  
+  <title>CAI Service Example</title>
+  <meta name="description" content="Adds simple C2PA Manifest to uploaded images">
+  <meta name="author" content="Gavin Peacock">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Add Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Add jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Add intl-tel-input CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+
+<body class="bg-gray-100 p-8">
+  <div class="mb-8 flex justify-center flex-col items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-center">CAI Service Example</h2>
+      <p class="mb-6 text-center">Simple example service to upload images and sign them.</p>
+      </div>
+    <div class="flex flex-col max-w-md">
+      <div>
+        <label for="name" class="block mb-2">Name:</label>
+        <input type="text" id="name" name="name" class="w-full p-2 mb-4 border rounded">
+      </div>
+      <div>
+        <label for="mobileNumber" class="block mb-2">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" class="w-full p-2 mb-4 border rounded"><br>
+      </div>
+      <div>
+
+        <br />
+        <input type="file" id="files" name="files" accept="image/png, image/jpeg" class="mb-4 w-full">
+        </div>
+        <button id="uploadButton" class="bg-blue-500 text-white p-2 rounded">Upload</button>
+        </div>
+        </div>
+        <div class="gallery grid grid-cols-3 gap-4"></div>
+        <div class="popup fixed hidden bg-white p-4 shadow-lg rounded">
+          <h2 class="title text-xl font-bold mb-2"></h2>
+          <p class="signer mb-1"></p>
+          <p class="time mb-1"></p>
+          <p class="producer"></p>
+        </div>
+
+  <script src="index.js"></script>
+  </body>
+  </html>
+  
