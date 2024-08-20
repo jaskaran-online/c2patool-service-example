@@ -20,7 +20,7 @@ const util = require('util');
 const child = require('child_process')
 let exec = util.promisify(child.exec);
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
