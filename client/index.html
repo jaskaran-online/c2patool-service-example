@@ -11,6 +11,18 @@
     .iti {
       width: 100%;
     }
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      border-top-color: #000;
+      animation: spin 1s infinite linear;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
   </style>
   
   <!-- Add Tailwind CSS via CDN -->
@@ -47,7 +59,7 @@
         <br />
         <input type="file" id="files" name="files" accept="image/png, image/jpeg" class="mb-4 w-full">
         </div>
-        <button id="uploadButton" class="bg-blue-500 text-white p-2 rounded">Upload</button>
+        <button id="uploadButton" class="bg-blue-500 text-white p-2 rounded mt-2">Upload</button>
         </div>
         </div>
         <div class="gallery grid grid-cols-3 gap-4"></div>

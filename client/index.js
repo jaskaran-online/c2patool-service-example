@@ -1,3 +1,6 @@
+// on local use locahost other wise use https://c2patool-service-example.onrender.com/
+const serverUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://c2patool-service-example.onrender.com/';
+
 /**
  * Copyright 2023 Adobe
  * All Rights Reserved.
@@ -44,7 +47,7 @@ function addGalleryItem(data) {
     const downloadBtn = document.createElement('a');
     downloadBtn.href = data.url;
     downloadBtn.download = data.name;
-    downloadBtn.classList.add('absolute', 'bottom-2', 'right-2', 'bg-blue-500', 'text-white', 'px-2', 'py-1', 'rounded');
+    downloadBtn.classList.add('absolute', 'bottom-2', 'right-2', 'bg-blue-500', 'text-white', 'px-2', 'py-4', 'rounded');
     downloadBtn.textContent = 'Download';
     galleryItem.appendChild(downloadBtn);
 
@@ -82,7 +85,7 @@ function addGalleryItem(data) {
         const popupWidth = popup.getBoundingClientRect().width;
         popup.style.left = `${rect.left > popupWidth ? rect.left - popupWidth : rect.left + rect.width}px`;
     });
-    
+
     badge.addEventListener("mouseleave", function() {
         // hide the popup
         popup.style.display = "none";
@@ -105,7 +108,7 @@ function previewFile(file) {
 // Function to handle file upload
 function handleFileUpload(file) {
     // reset the container
-    gallery.innerHTML = ""; 
+    gallery.innerHTML = "";
 
     // Get user information
     const name = document.getElementById('name').value;
@@ -122,7 +125,7 @@ function handleFileUpload(file) {
     // post the file to our server
     reader.addEventListener('load', async (event) => {
         try {
-            let url = `${window.location.origin}/upload?name=${fileName}`
+            let url = `${serverUrl}/upload?name=${fileName}`
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
@@ -162,9 +165,32 @@ fileInput.addEventListener('change', (event) => {
 });
 
 // Handle upload button click
-document.getElementById('uploadButton').addEventListener('click', () => {
+document.getElementById('uploadButton').addEventListener('click', async (event) => {
+    event.preventDefault();
     if (fileInput.files.length > 0) {
-        handleFileUpload(fileInput.files[0]);
+        // Show loading message with animation
+        const uploadButton = event.target;
+        console.log(uploadButton);
+        uploadButton.disabled = true;
+        uploadButton.classList.remove('bg-blue-500');
+        uploadButton.classList.add('bg-gray-500');
+        uploadButton.innerHTML = 'Uploading...';
+
+        // Create and append spinner next to the button
+        const spinner = document.createElement('div');
+        spinner.classList.add('spinner');
+        uploadButton.parentNode.insertBefore(spinner, uploadButton.nextSibling);
+
+        try {
+            await handleFileUpload(fileInput.files[0]);
+        } finally {
+            // Remove loading message and spinner after response is received
+            uploadButton.disabled = false;
+            uploadButton.innerHTML = 'Upload';
+            uploadButton.classList.remove('bg-gray-500');
+            uploadButton.classList.add('bg-blue-500');
+            spinner.remove();
+        }
     } else {
         alert('Please select a file to upload.');
     }

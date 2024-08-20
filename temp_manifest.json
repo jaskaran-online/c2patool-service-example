@@ -1,1 +1,0 @@
-{"ta_url":"http://timestamp.digicert.com","claim_generator":"CAI_Demo/0.1","assertions":[{"label":"c2pa.actions","data":{"actions":[{"action":"c2pa.published"}]}},{"label":"personal.info","data":{"name":"Jaskaran Singh","countryName":"India (भारत)","countryCode":"91","phone":"9530654704","action":"c2pa.published"}}]}

@@ -1,0 +1,339 @@
+2024-08-20T10:30:07.911Z info: Initializing server...
+2024-08-20T10:30:07.926Z info: Configuring middleware...
+2024-08-20T10:30:07.936Z info: Setting up routes...
+2024-08-20T10:30:07.959Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:30:35.013Z info: Received file upload request
+2024-08-20T10:30:35.014Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:35.016Z info: Creating custom manifest...
+2024-08-20T10:30:35.018Z info: Created custom manifest:
+2024-08-20T10:30:35.024Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:30:35.037Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:35.039Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:30:37.133Z info: c2patool execution completed
+2024-08-20T10:30:37.135Z info: Temporary manifest file cleaned up
+2024-08-20T10:30:37.137Z info: Manifest store report:
+2024-08-20T10:30:37.145Z info: Response sent to client
+2024-08-20T10:30:39.964Z info: Received file upload request
+2024-08-20T10:30:39.966Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:39.967Z info: Creating custom manifest...
+2024-08-20T10:30:39.969Z info: Created custom manifest:
+2024-08-20T10:30:39.972Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:30:39.979Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:39.981Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:30:40.983Z info: Received file upload request
+2024-08-20T10:30:40.983Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:40.983Z info: Creating custom manifest...
+2024-08-20T10:30:40.984Z info: Created custom manifest:
+2024-08-20T10:30:40.987Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:30:40.995Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:30:40.996Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:30:41.215Z info: c2patool execution completed
+2024-08-20T10:30:41.217Z info: Temporary manifest file cleaned up
+2024-08-20T10:30:41.219Z info: Manifest store report:
+2024-08-20T10:30:41.223Z info: Response sent to client
+2024-08-20T10:30:41.250Z error: Error during file upload and processing: Command failed: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+Error: The system cannot find the file specified. (os error 2)
+
+2024-08-20T10:31:07.035Z info: Received file upload request
+2024-08-20T10:31:07.036Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:07.037Z info: Creating custom manifest...
+2024-08-20T10:31:07.039Z info: Created custom manifest:
+2024-08-20T10:31:07.043Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:31:07.052Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:07.054Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:31:08.363Z info: Received file upload request
+2024-08-20T10:31:08.365Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:08.366Z info: Creating custom manifest...
+2024-08-20T10:31:08.367Z info: Created custom manifest:
+2024-08-20T10:31:08.372Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:31:08.382Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:08.386Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:31:08.667Z info: c2patool execution completed
+2024-08-20T10:31:08.670Z info: Temporary manifest file cleaned up
+2024-08-20T10:31:08.671Z info: Manifest store report:
+2024-08-20T10:31:08.673Z info: Response sent to client
+2024-08-20T10:31:09.866Z info: c2patool execution completed
+2024-08-20T10:31:09.871Z error: Error during file upload and processing: ENOENT: no such file or directory, unlink 'D:\Work\New folder\c2patool-service-example\temp_manifest.json'
+2024-08-20T10:31:37.372Z info: Received file upload request
+2024-08-20T10:31:37.373Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:37.374Z info: Creating custom manifest...
+2024-08-20T10:31:37.375Z info: Created custom manifest:
+2024-08-20T10:31:37.379Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:31:37.387Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:37.388Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:31:38.647Z info: Received file upload request
+2024-08-20T10:31:38.649Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:38.650Z info: Creating custom manifest...
+2024-08-20T10:31:38.651Z info: Created custom manifest:
+2024-08-20T10:31:38.653Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:31:38.661Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:31:38.662Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:31:38.942Z info: c2patool execution completed
+2024-08-20T10:31:38.944Z info: Temporary manifest file cleaned up
+2024-08-20T10:31:38.945Z info: Manifest store report:
+2024-08-20T10:31:38.950Z info: Response sent to client
+2024-08-20T10:31:40.057Z info: c2patool execution completed
+2024-08-20T10:31:40.061Z error: Error during file upload and processing: ENOENT: no such file or directory, unlink 'D:\Work\New folder\c2patool-service-example\temp_manifest.json'
+2024-08-20T10:32:49.938Z info: Initializing server...
+2024-08-20T10:32:49.951Z info: Configuring middleware...
+2024-08-20T10:32:49.960Z info: Setting up routes...
+2024-08-20T10:32:49.986Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:33:02.439Z info: Received file upload request
+2024-08-20T10:33:02.441Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:02.442Z info: Creating custom manifest...
+2024-08-20T10:33:02.444Z info: Created custom manifest:
+2024-08-20T10:33:02.453Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:33:02.464Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:02.468Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:33:03.882Z info: c2patool execution completed
+2024-08-20T10:33:03.885Z info: Temporary manifest file cleaned up
+2024-08-20T10:33:03.887Z info: Manifest store report:
+2024-08-20T10:33:03.895Z info: Response sent to client
+2024-08-20T10:33:04.140Z info: Received file upload request
+2024-08-20T10:33:04.141Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:04.142Z info: Creating custom manifest...
+2024-08-20T10:33:04.143Z info: Created custom manifest:
+2024-08-20T10:33:04.145Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:33:04.149Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:04.151Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:33:05.531Z info: c2patool execution completed
+2024-08-20T10:33:05.533Z info: Temporary manifest file cleaned up
+2024-08-20T10:33:05.534Z info: Manifest store report:
+2024-08-20T10:33:05.536Z info: Response sent to client
+2024-08-20T10:33:08.161Z info: Received file upload request
+2024-08-20T10:33:08.162Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:08.162Z info: Creating custom manifest...
+2024-08-20T10:33:08.163Z info: Created custom manifest:
+2024-08-20T10:33:08.168Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:33:08.176Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:33:08.177Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:33:09.592Z info: c2patool execution completed
+2024-08-20T10:33:09.595Z info: Temporary manifest file cleaned up
+2024-08-20T10:33:09.598Z info: Manifest store report:
+2024-08-20T10:33:09.603Z info: Response sent to client
+2024-08-20T10:34:43.369Z info: Initializing server...
+2024-08-20T10:34:43.376Z info: Configuring middleware...
+2024-08-20T10:34:43.377Z info: Setting up routes...
+2024-08-20T10:34:43.385Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:34:50.427Z info: Received file upload request
+2024-08-20T10:34:50.428Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:34:50.428Z info: Creating custom manifest...
+2024-08-20T10:34:50.429Z info: Created custom manifest:
+2024-08-20T10:34:50.431Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:34:50.436Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:34:50.436Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:34:51.115Z info: Initializing server...
+2024-08-20T10:34:51.119Z info: Configuring middleware...
+2024-08-20T10:34:51.122Z info: Setting up routes...
+2024-08-20T10:34:51.126Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:34:59.198Z info: Received file upload request
+2024-08-20T10:34:59.199Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:34:59.199Z info: Creating custom manifest...
+2024-08-20T10:34:59.200Z info: Created custom manifest:
+2024-08-20T10:34:59.202Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:34:59.204Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:34:59.205Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:34:59.832Z info: Initializing server...
+2024-08-20T10:34:59.836Z info: Configuring middleware...
+2024-08-20T10:34:59.838Z info: Setting up routes...
+2024-08-20T10:34:59.844Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:35:08.925Z info: Initializing server...
+2024-08-20T10:35:08.931Z info: Configuring middleware...
+2024-08-20T10:35:08.933Z info: Setting up routes...
+2024-08-20T10:35:08.940Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:35:33.931Z info: Received file upload request
+2024-08-20T10:35:33.932Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:35:33.932Z info: Creating custom manifest...
+2024-08-20T10:35:33.933Z info: Created custom manifest:
+2024-08-20T10:35:33.934Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:35:33.938Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:35:33.939Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:35:34.732Z info: c2patool execution completed
+2024-08-20T10:35:34.733Z info: Temporary manifest file cleaned up
+2024-08-20T10:35:34.733Z info: Manifest store report:
+2024-08-20T10:35:34.736Z info: Response sent to client
+2024-08-20T10:36:52.544Z info: Initializing server...
+2024-08-20T10:36:52.549Z info: Configuring middleware...
+2024-08-20T10:36:52.551Z info: Setting up routes...
+2024-08-20T10:36:52.556Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:37:01.571Z info: Received file upload request
+2024-08-20T10:37:01.572Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:01.572Z info: Creating custom manifest...
+2024-08-20T10:37:01.572Z info: Created custom manifest:
+2024-08-20T10:37:01.575Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:01.579Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:01.580Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:02.373Z info: c2patool execution completed
+2024-08-20T10:37:02.374Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:02.374Z info: Manifest store report:
+2024-08-20T10:37:02.377Z info: Response sent to client
+2024-08-20T10:37:11.603Z info: Received file upload request
+2024-08-20T10:37:11.603Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:11.604Z info: Creating custom manifest...
+2024-08-20T10:37:11.604Z info: Created custom manifest:
+2024-08-20T10:37:11.605Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:11.608Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:11.608Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:12.379Z info: c2patool execution completed
+2024-08-20T10:37:12.380Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:12.381Z info: Manifest store report:
+2024-08-20T10:37:12.382Z info: Response sent to client
+2024-08-20T10:37:43.696Z info: Initializing server...
+2024-08-20T10:37:43.700Z info: Configuring middleware...
+2024-08-20T10:37:43.702Z info: Setting up routes...
+2024-08-20T10:37:43.707Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:37:50.545Z info: Received file upload request
+2024-08-20T10:37:50.545Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:50.545Z info: Creating custom manifest...
+2024-08-20T10:37:50.546Z info: Created custom manifest:
+2024-08-20T10:37:50.548Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:50.552Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:50.552Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:51.400Z info: c2patool execution completed
+2024-08-20T10:37:51.401Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:51.401Z info: Manifest store report:
+2024-08-20T10:37:51.404Z info: Response sent to client
+2024-08-20T10:37:53.960Z info: Received file upload request
+2024-08-20T10:37:53.961Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:53.961Z info: Creating custom manifest...
+2024-08-20T10:37:53.961Z info: Created custom manifest:
+2024-08-20T10:37:53.963Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:53.965Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:53.965Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:54.737Z info: c2patool execution completed
+2024-08-20T10:37:54.737Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:54.738Z info: Manifest store report:
+2024-08-20T10:37:54.739Z info: Response sent to client
+2024-08-20T10:37:57.364Z info: Received file upload request
+2024-08-20T10:37:57.365Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:57.365Z info: Creating custom manifest...
+2024-08-20T10:37:57.365Z info: Created custom manifest:
+2024-08-20T10:37:57.366Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:57.368Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:57.369Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:58.127Z info: c2patool execution completed
+2024-08-20T10:37:58.127Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:58.128Z info: Manifest store report:
+2024-08-20T10:37:58.129Z info: Response sent to client
+2024-08-20T10:37:58.612Z info: Received file upload request
+2024-08-20T10:37:58.613Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:58.613Z info: Creating custom manifest...
+2024-08-20T10:37:58.613Z info: Created custom manifest:
+2024-08-20T10:37:58.614Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:37:58.616Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:37:58.616Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:37:59.384Z info: c2patool execution completed
+2024-08-20T10:37:59.385Z info: Temporary manifest file cleaned up
+2024-08-20T10:37:59.385Z info: Manifest store report:
+2024-08-20T10:37:59.386Z info: Response sent to client
+2024-08-20T10:38:00.843Z info: Received file upload request
+2024-08-20T10:38:00.844Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:38:00.844Z info: Creating custom manifest...
+2024-08-20T10:38:00.844Z info: Created custom manifest:
+2024-08-20T10:38:00.845Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:38:00.847Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:38:00.847Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:38:01.784Z info: c2patool execution completed
+2024-08-20T10:38:01.785Z info: Temporary manifest file cleaned up
+2024-08-20T10:38:01.785Z info: Manifest store report:
+2024-08-20T10:38:01.786Z info: Response sent to client
+2024-08-20T10:38:08.746Z info: Received file upload request
+2024-08-20T10:38:08.746Z info: Processing file: 123.jpg
+2024-08-20T10:38:08.746Z info: Creating custom manifest...
+2024-08-20T10:38:08.747Z info: Created custom manifest:
+2024-08-20T10:38:08.747Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:38:08.751Z info: File uploaded to: uploads/123.jpg
+2024-08-20T10:38:08.752Z info: Executing command: c2patool "uploads/123.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/123.jpg" -f
+2024-08-20T10:38:09.653Z info: c2patool execution completed
+2024-08-20T10:38:09.654Z info: Temporary manifest file cleaned up
+2024-08-20T10:38:09.654Z info: Manifest store report:
+2024-08-20T10:38:09.655Z info: Response sent to client
+2024-08-20T10:38:13.343Z info: Received file upload request
+2024-08-20T10:38:13.344Z info: Processing file: 123.jpg
+2024-08-20T10:38:13.344Z info: Creating custom manifest...
+2024-08-20T10:38:13.344Z info: Created custom manifest:
+2024-08-20T10:38:13.345Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:38:13.347Z info: File uploaded to: uploads/123.jpg
+2024-08-20T10:38:13.347Z info: Executing command: c2patool "uploads/123.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/123.jpg" -f
+2024-08-20T10:38:14.125Z info: c2patool execution completed
+2024-08-20T10:38:14.126Z info: Temporary manifest file cleaned up
+2024-08-20T10:38:14.126Z info: Manifest store report:
+2024-08-20T10:38:14.127Z info: Response sent to client
+2024-08-20T10:39:10.794Z info: Received file upload request
+2024-08-20T10:39:10.794Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:39:10.795Z info: Creating custom manifest...
+2024-08-20T10:39:10.795Z info: Created custom manifest:
+2024-08-20T10:39:10.796Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:39:10.798Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:39:10.798Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:39:11.825Z info: c2patool execution completed
+2024-08-20T10:39:11.826Z info: Temporary manifest file cleaned up
+2024-08-20T10:39:11.826Z info: Manifest store report:
+2024-08-20T10:39:11.827Z info: Response sent to client
+2024-08-20T10:39:21.044Z info: Initializing server...
+2024-08-20T10:39:21.050Z info: Configuring middleware...
+2024-08-20T10:39:21.053Z info: Setting up routes...
+2024-08-20T10:39:21.058Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:39:31.133Z info: Received file upload request
+2024-08-20T10:39:31.133Z info: Processing file: WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:39:31.134Z info: Creating custom manifest...
+2024-08-20T10:39:31.134Z info: Created custom manifest:
+2024-08-20T10:39:31.136Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:39:31.141Z info: File uploaded to: uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg
+2024-08-20T10:39:31.141Z info: Executing command: c2patool "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/WhatsApp Image 2024-05-31 at 10.16.03_7fdc6768.jpg" -f
+2024-08-20T10:39:31.920Z info: c2patool execution completed
+2024-08-20T10:39:31.921Z info: Temporary manifest file cleaned up
+2024-08-20T10:39:31.921Z info: Manifest store report:
+2024-08-20T10:39:31.923Z info: Response sent to client
+2024-08-20T10:41:14.813Z info: Initializing server...
+2024-08-20T10:41:14.819Z info: Configuring middleware...
+2024-08-20T10:41:14.821Z info: Setting up routes...
+2024-08-20T10:41:14.825Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:41:25.435Z info: Received file upload request
+2024-08-20T10:41:25.436Z info: Processing file: MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:25.436Z info: Creating custom manifest...
+2024-08-20T10:41:25.436Z info: Created custom manifest:
+2024-08-20T10:41:25.438Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:41:25.444Z info: File uploaded to: uploads/MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:25.444Z info: Executing command: c2patool "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -f
+2024-08-20T10:41:26.356Z info: c2patool execution completed
+2024-08-20T10:41:26.356Z info: Temporary manifest file cleaned up
+2024-08-20T10:41:26.357Z info: Manifest store report:
+2024-08-20T10:41:26.359Z info: Response sent to client
+2024-08-20T10:41:29.144Z info: Received file upload request
+2024-08-20T10:41:29.145Z info: Processing file: MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:29.145Z info: Creating custom manifest...
+2024-08-20T10:41:29.145Z info: Created custom manifest:
+2024-08-20T10:41:29.146Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:41:29.148Z info: File uploaded to: uploads/MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:29.148Z info: Executing command: c2patool "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -f
+2024-08-20T10:41:30.010Z info: c2patool execution completed
+2024-08-20T10:41:30.010Z info: Temporary manifest file cleaned up
+2024-08-20T10:41:30.011Z info: Manifest store report:
+2024-08-20T10:41:30.012Z info: Response sent to client
+2024-08-20T10:41:31.083Z info: Received file upload request
+2024-08-20T10:41:31.084Z info: Processing file: MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:31.084Z info: Creating custom manifest...
+2024-08-20T10:41:31.084Z info: Created custom manifest:
+2024-08-20T10:41:31.085Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:41:31.088Z info: File uploaded to: uploads/MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:41:31.088Z info: Executing command: c2patool "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -f
+2024-08-20T10:41:33.139Z info: c2patool execution completed
+2024-08-20T10:41:33.140Z info: Temporary manifest file cleaned up
+2024-08-20T10:41:33.141Z info: Manifest store report:
+2024-08-20T10:41:33.141Z info: Response sent to client
+2024-08-20T10:42:55.035Z info: Initializing server...
+2024-08-20T10:42:55.045Z info: Configuring middleware...
+2024-08-20T10:42:55.051Z info: Setting up routes...
+2024-08-20T10:42:55.070Z info: CAI HTTP server listening on port 3000.
+2024-08-20T10:43:04.648Z info: Received file upload request
+2024-08-20T10:43:04.648Z info: Processing file: MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:43:04.649Z info: Creating custom manifest...
+2024-08-20T10:43:04.649Z info: Created custom manifest:
+2024-08-20T10:43:04.651Z info: Temporary manifest file created: D:\Work\New folder\c2patool-service-example\temp_manifest.json
+2024-08-20T10:43:04.655Z info: File uploaded to: uploads/MacOS-Sonoma-Wallpaper-16.jpg
+2024-08-20T10:43:04.656Z info: Executing command: c2patool "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -m "D:\Work\New folder\c2patool-service-example\temp_manifest.json" -o "uploads/MacOS-Sonoma-Wallpaper-16.jpg" -f
+2024-08-20T10:43:05.531Z info: c2patool execution completed
+2024-08-20T10:43:05.532Z info: Temporary manifest file cleaned up
+2024-08-20T10:43:05.532Z info: Manifest store report:
+2024-08-20T10:43:05.534Z info: Response sent to client
