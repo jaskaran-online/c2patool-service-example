@@ -122,7 +122,7 @@ function handleFileUpload(file) {
     // post the file to our server
     reader.addEventListener('load', async (event) => {
         try {
-            let url = `http://localhost:8000/upload?name=${fileName}`
+            let url = `${window.location.origin}/upload?name=${fileName}`
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {

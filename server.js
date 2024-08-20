@@ -19,25 +19,25 @@ const _ = require('lodash');
 const util = require('util');
 const child = require('child_process')
 let exec = util.promisify(child.exec);
-
 const winston = require('winston');
+
+const port = process.env.PORT || 3000;
+
+const app = express();
 
 const logger = winston.createLogger({
   level: 'info',
   format: winston.format.combine(
     winston.format.timestamp(),
-    winston.format.printf(({ level, message, timestamp }) => {
-      return `${timestamp} ${level.toUpperCase()}: ${message}`;
+    winston.format.printf(({ timestamp, level, message }) => {
+      return `${timestamp} ${level}: ${message}`;
     })
   ),
   transports: [
-    new winston.transports.Console()
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'server.log' })
   ]
 });
-
-const port = process.env.PORT || 3000;
-
-const app = express();
 
 logger.info('Initializing server...');
 
@@ -49,7 +49,7 @@ let imageFolder = 'uploads'
 app.use(express.static(imageFolder));
 
 // Create a local folder to hold images in this example.
-if (!fs.existsSync(imageFolder)) {
+if(!fs.existsSync(imageFolder)){
   logger.info(`Creating image folder: ${imageFolder}`);
   fs.mkdirSync(imageFolder)
 }
@@ -57,8 +57,8 @@ if (!fs.existsSync(imageFolder)) {
 // Enable files upload.
 app.use(fileUpload({
   createParentPath: true,
-  limits: {
-    fileSize: 20 * 1024 * 1024 // 20MB max upload file(s) size
+  limits: { 
+      fileSize: 2 * 1024 * 1024 * 1024 // max upload file(s) size
   },
 }));
 
@@ -82,7 +82,7 @@ app.get('/version', async function (req, res) {
   logger.info('Received request for c2patool version');
   try {
     let result = await exec('c2patool --version');
-    logger.info(`c2patool version: ${result.stdout.trim()}`);
+    logger.info(`c2patool version: ${result.stdout}`);
     res.send(result.stdout);
   } catch (err) {
     logger.error('Error getting c2patool version:', err);
@@ -91,7 +91,7 @@ app.get('/version', async function (req, res) {
 });
 
 // Uploads a file, adds a C2PA manifest and returns a URL
-app.post('/upload', async (req, res) => {
+app.post('/upload', async (req, res) => { 
   logger.info('Received file upload request');
   try {
     let fileName = req.query.name;
@@ -102,35 +102,38 @@ app.post('/upload', async (req, res) => {
     const { name, countryName, countryCode, mobileNumber } = req.body;
 
     // Create a custom manifest JSON
-    logger.info('Creating custom manifest');
+    logger.info('Creating custom manifest...');
+
     const customManifest = JSON.stringify({
       "ta_url": "http://timestamp.digicert.com",
       "claim_generator": "CAI_Demo/0.1",
       "assertions": [
-        {
-          "label": "c2pa.actions",
-          "data": {
-            "actions": [
-              {
-                "action": "c2pa.published"
+          {
+              "label": "c2pa.actions",
+              "data": {
+                  "actions": [
+                      {
+                          "action": "c2pa.published"
+                      }
+                  ]
               }
-            ]
+          },
+          {
+              "label": "personal.info",
+              "data": {
+                  "name": name,
+                  "countryName": countryName,
+                  "countryCode": countryCode,
+                  "phone": mobileNumber,
+                  "action": "c2pa.published"
+              }
           }
-        },
-        {
-          "label": "personal.info",
-          "data": {
-            "name": name,
-            "countryName": countryName,
-            "countryCode": countryCode,
-            "phone": mobileNumber,
-            "action": "c2pa.published"
-          }
-        }
       ]
-    });
+  });
 
-    logger.info(`Created custom manifest: ${customManifest}`);
+
+
+    logger.info('Created custom manifest:', customManifest);
 
     // Write the custom manifest to a temporary file
     const tempManifestPath = path.join(__dirname, 'temp_manifest.json');
@@ -138,7 +141,7 @@ app.post('/upload', async (req, res) => {
     logger.info(`Temporary manifest file created: ${tempManifestPath}`);
 
     // upload the file
-    await fsPromises.writeFile(filePath, Buffer.from(req.files.file.data));
+    await fsPromises.appendFile(filePath, Buffer.from(req.body.file), { flag: 'w' });
     logger.info(`File uploaded to: ${filePath}`);
 
     // call c2patool to add a manifest using the temporary custom manifest file
@@ -153,11 +156,11 @@ app.post('/upload', async (req, res) => {
 
     // get the manifest store report from stdout
     let report = JSON.parse(result.stdout)
-    logger.info(`Manifest store report: ${JSON.stringify(report)}`);
+    logger.info('Manifest store report:', report);
     res.send({
-      name: fileName,
-      url: `http://localhost:${port}/${fileName}`,
-      report
+        name: fileName,
+        url: `http://localhost:${port}/${fileName}`,
+        report
     });
     logger.info('Response sent to client');
   } catch (err) {
@@ -174,6 +177,6 @@ app.get('/', function (req, res) {
 });
 
 // start the http server
-app.listen(port, () =>
+app.listen(port, () => 
   logger.info(`CAI HTTP server listening on port ${port}.`)
 );
