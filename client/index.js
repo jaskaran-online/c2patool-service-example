@@ -1,5 +1,5 @@
 // on local use locahost other wise use https://c2patool-service-example.onrender.com/
-const serverUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://c2patool-service-example.onrender.com/';
+const serverUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://c2patool-service-example.onrender.com';
 
 /**
  * Copyright 2023 Adobe
