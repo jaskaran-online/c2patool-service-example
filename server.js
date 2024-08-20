@@ -157,11 +157,9 @@ app.post('/upload', async (req, res) => {
     // get the manifest store report from stdout
     let report = JSON.parse(result.stdout)
     logger.info('Manifest store report:', report);
-    // on local use locahost other wise use https://c2patool-service-example.onrender.com/
-    const serverUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://c2patool-service-example.onrender.com';
     res.send({
         name: fileName,
-        url: `${serverUrl}/${fileName}`,
+        url: `https://c2patool-service-example.onrender.com/${fileName}`,
         report
     });
     logger.info('Response sent to client');
