@@ -123,7 +123,7 @@ app.post('/upload', async (req, res) => {
               "data": {
                   "name": name,
                   "countryName": countryName,
-                  "countryCode": `+{countryCode}`,
+                  "countryCode": `+${countryCode}`,
                   "phone": mobileNumber,
                   "action": "c2pa.published"
               }
